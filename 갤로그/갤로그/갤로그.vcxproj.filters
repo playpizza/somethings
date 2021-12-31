@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\EntryPoint">
+      <UniqueIdentifier>{9c41dac4-c0a7-45ef-8aa2-206aa7b1727d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\FrameWork">
+      <UniqueIdentifier>{b83b5e76-63f7-43d7-9ecf-9db04ed5d158}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\FrameWork\DoubleBuffer">
+      <UniqueIdentifier>{2811d2d4-b043-40c8-b5da-fda1cf09067e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\FrameWork\System">
+      <UniqueIdentifier>{2905d698-718c-4ffa-ac55-ec98117ea15f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\FrameWork\SceneManager">
+      <UniqueIdentifier>{6c3e9c4c-f55f-4a38-b98a-d94d284a4c3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\FrameWork\Scene">
+      <UniqueIdentifier>{9acc8a51-b799-4f21-99dc-87769e652148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\FrameWork\Object">
+      <UniqueIdentifier>{eadccdf6-3889-4fdc-bc2c-9ef6e42d7d25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\FrameWork\Scene\AbstractClass">
+      <UniqueIdentifier>{a443ae53-d5f1-4aa2-980d-59ff645e8938}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\FrameWork\Object\AbstractClass">
+      <UniqueIdentifier>{606be32b-3674-4ccc-b558-4b7929b569fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\FrameWork\Scene\MenuScene">
+      <UniqueIdentifier>{a731175e-f2ce-4fbd-9476-57f2b0886b69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\FrameWork\Scene\GameScene">
+      <UniqueIdentifier>{210b5935-ace3-4df7-80f9-c9b74bafdd01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\FrameWork\Object\Character">
+      <UniqueIdentifier>{cc9b82e0-5931-4861-91a2-67a045e3300c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\FrameWork\Object\Bullet">
+      <UniqueIdentifier>{a9741d3b-8b72-4fac-8aaf-5d3a0e908e68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\FrameWork\Object\Enemy">
+      <UniqueIdentifier>{77905670-926a-4214-af17-0a97c906ce75}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DoubleBuffer.h">
+      <Filter>소스 파일\FrameWork\DoubleBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDefine.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>소스 파일\FrameWork\Object\AbstractClass</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>소스 파일\FrameWork\Scene\AbstractClass</Filter>
+    </ClInclude>
+    <ClInclude Include="System.h">
+      <Filter>소스 파일\FrameWork\System</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuScene.h">
+      <Filter>소스 파일\FrameWork\Scene\MenuScene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>소스 파일\FrameWork\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneDefine.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>소스 파일\FrameWork\Scene\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>소스 파일\FrameWork\Object\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>소스 파일\FrameWork\Object\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>소스 파일\FrameWork\Object\Enemy</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DoubleBuffer.cpp">
+      <Filter>소스 파일\FrameWork\DoubleBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일\EntryPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuScene.cpp">
+      <Filter>소스 파일\FrameWork\Scene\MenuScene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>소스 파일\FrameWork\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>소스 파일\FrameWork\Scene\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>소스 파일\FrameWork\Object\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>소스 파일\FrameWork\Object\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>소스 파일\FrameWork\Object\Enemy</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
