@@ -63,7 +63,7 @@ public class User {
 		String userId = null;
 		String charNick = null;
 		int menu = 0;
-		
+				
 		do {
 			System.out.println("---- ---- ---- ---- ----");
 			System.out.println("---- 메인메뉴 ----");

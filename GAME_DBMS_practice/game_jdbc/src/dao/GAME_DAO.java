@@ -457,8 +457,8 @@ public class GAME_DAO {
 			rs = pstm.executeQuery();
 			rs.next();
 			
-			if(rs.getInt(1) == 1) {check = true;}
-			if(!checkBan(id)) {return false;}
+			if((rs.getInt(1) == 1) && (checkBan(id))) {loginTime(id); check = true;}
+			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
@@ -466,6 +466,34 @@ public class GAME_DAO {
 				if(rs != null) {
 					rs.close();
 				}
+				if(pstm != null) {
+					pstm.close();
+				}
+				if(conn != null) {
+					conn.close();
+				}
+			} catch (SQLException e) {
+				throw new RuntimeException();
+			}
+		}
+		return check;
+	}
+	
+	//접속시간 기록
+	public boolean loginTime(String id) {
+		String query = "UPDATE GAME_USER_ID "
+				+ "SET USER_LAST_JOIN = SYSDATE "
+				+ "WHERE USER_ID = ?";
+		boolean check = false;
+		try {
+			conn = DBConnecter.getConnection();
+			pstm = conn.prepareStatement(query);
+			pstm.setString(1, id);
+			if(pstm.executeUpdate() == 1) {check = true;}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
 				if(pstm != null) {
 					pstm.close();
 				}
