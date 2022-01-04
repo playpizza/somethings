@@ -909,6 +909,36 @@ public class GAME_DAO {
 		return cls;
 	}
 	
+	//접속권한관리
+	public boolean allowAccess(String id, boolean access) {
+		String query = "UPDATE GAME_USER_ID "
+				+ "SET USER_ACCESS = ? "
+				+ "WHERE USER_ID = ?";
+		boolean check = false;
+		try {
+			conn = DBConnecter.getConnection();
+			pstm = conn.prepareStatement(query);
+			if(access) {pstm.setString(1, "Y");}
+			else {pstm.setString(1, "N");}
+			pstm.setString(2, id);
+			if(pstm.executeUpdate() == 1) {check = true;}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if(pstm != null) {
+					pstm.close();
+				}
+				if(conn != null) {
+					conn.close();
+				}
+			} catch (SQLException e) {
+				throw new RuntimeException();
+			}
+		}
+		return check;
+	}
+	
 	//대전기록 입력과 exp획득
 	
 	

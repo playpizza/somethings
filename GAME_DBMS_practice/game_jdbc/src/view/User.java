@@ -244,7 +244,43 @@ public class User {
 					if (menu == 1) { //대전로그넣기
 
 					} else if (menu == 2) { //접속권한관리
-
+						System.out.println("---- ---- ---- ---- ----");
+						System.out.println("1. 접속권한 허락하기");
+						System.out.println("2. 접속권한 제한하기");
+						System.out.println("3. 뒤로가기");
+						System.out.print("  >> ");
+						menu = sc.nextInt();
+						sc.nextLine();
+						if(menu == 1) {
+							System.out.println("---- ---- ---- ---- ----");
+							System.out.print("대상 ID 입력 : ");
+							String temp = sc.nextLine();
+							if(dao.allowAccess(temp, true)) {
+								System.out.println("변경되었습니다.");
+								System.out.println();
+							}else {
+								System.out.println("실패했습니다.");
+								System.out.println();
+							}
+							
+						}else if(menu == 2) {
+							System.out.println("---- ---- ---- ---- ----");
+							System.out.print("대상 ID 입력 : ");
+							String temp = sc.nextLine();
+							if(dao.allowAccess(temp, false)) {
+								System.out.println("변경되었습니다.");
+								System.out.println();
+							}else {
+								System.out.println("실패했습니다.");
+								System.out.println();
+							}
+						}else if(menu == 3) {
+							System.out.println();
+							System.out.println();
+						}else {
+							System.out.println();
+							System.out.println();
+						}
 					} else if (menu == 3) { //종료
 
 					} else {
