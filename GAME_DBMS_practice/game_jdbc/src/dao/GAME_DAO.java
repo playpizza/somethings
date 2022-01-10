@@ -939,7 +939,52 @@ public class GAME_DAO {
 		return check;
 	}
 	
-	//대전기록 입력과 exp획득
+	//win포인트
+	
+	//lose포인트
+	
+	//win경험치
+	
+	//loss경험치
+	
+	//유저exp가져오기
+	
+	//유저exp업데이트
+	
+	//캐릭터exp가져오기
+	
+	//캐릭터exp업데이트
+	
+	//캐틱터point가져오기
+	
+	//캐릭터point업데이트
+	
+	//캐릭터win가져오기
+	
+	//캐릭터win업데이트
+	
+	//캐릭터lose가져오기
+	
+	//캐릭터lose업데이트
+	
+	//캐릭터draw가져오기
+	
+	//캐릭터draw업데이트
+	
+	//exp획득
+	
+	//점수획득
+	public boolean getPoint(String nick, int point) {
+		boolean check = false;
+		
+		
+		
+		
+		
+		return check;
+	}
+	
+	//대전기록 입력
 	
 	
 }

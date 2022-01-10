@@ -122,7 +122,7 @@ public class User {
 						
 						do {
 							System.out.println("---- ---- ---- ---- ----");
-							System.out.println("NICKNAME : " + charDto.getNick() + "\tLV : " + charDto.getLv() + "\tCLASS : " + charDto.getClass());
+							System.out.println("NICKNAME : " + charDto.getNick() + "\tLV : " + charDto.getLv() + "\tCLASS : " + charDto.getCl());
 							System.out.println("WIN : " + charDto.getWin() + "\tRATE : " + charDto.getRate() + "\tTIER : " + charDto.getTier());
 							System.out.println("POWER : " + charDto.getPower() + "\tATTACK SPEED : " + charDto.getaSpeed());
 							System.out.println("HP : " + charDto.getHp() + "\tAMMOR : " + charDto.getAmmor() + "\tSPEED : " + charDto.getMove());
@@ -282,9 +282,9 @@ public class User {
 							System.out.println();
 						}
 					} else if (menu == 3) { //종료
-
+						System.out.println();
 					} else {
-
+						System.out.println();
 					} 
 				} while (menu != 3);
 				
